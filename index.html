@@ -1,14 +1,63 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/README.js"></script>
     <script src="js/scripts.js"></script>
-    <meta charset="utf-8">
-    <title></title>
+    <title>Pizza Place!</title>
   </head>
   <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Pizza place header goes here! Ay!</h1>
+      </div>
 
+      <div class="sidebar">
+        <p>make pizza text goes here.</p>
+      </div>
+
+      <form id="pizzaCreator">
+        <div class="radio">
+          <label>
+            <input type="radio" name="size" value="personal" checked>
+            Personal
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="size" value="medium">
+            Medium
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="size" value="large">
+            Large
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="size" value="xl">
+            X-Large
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>Which Toppings Would You Like?</p>
+          <input type="checkbox" name="toppings" value="peppo">Pepperoni<br>
+          <input type="checkbox" name="toppings" value="peppers"> Fresh Peppers<br>
+          <input type="checkbox" name="toppings" value="anchovies">Anchovies<br>
+          <input type="checkbox" name="toppings" value="tomatoes">Tomatoes<br>
+          <input type="checkbox" name="toppings" value="cheese">Cheese<br>
+        </div>
+
+
+        <button type="submit" class="bttn">Confirm Pizza</button>
+      </form>
+
+
+
+    </div>
   </body>
 </html>
