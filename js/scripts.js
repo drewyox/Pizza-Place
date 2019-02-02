@@ -7,9 +7,6 @@ Pizza.prototype.price = function() {
 return this.size + this.toppings.length*2.50;
 }
 
-
-
-
 $(document).ready(function() {
 
   var toppings = [];
@@ -18,13 +15,13 @@ $(document).ready(function() {
   $("#pizzaCreator").submit(function(event) {
   var size = $("input:radio[name=size]:checked").val();
 
-  if (size === "personal") {
+  if (size === "Personal") {
     sizePrice = 7;
   }
-  else if (size == "medium") {
+  else if (size == "Medium") {
     sizePrice=11;
   }
-  else if (size==="large") {
+  else if (size==="Large") {
     sizePrice=14;
   }
   else {
@@ -32,16 +29,14 @@ $(document).ready(function() {
   }
    $("input:checkbox[name=toppings]:checked").each(function(){
       var toppingChoice = $(this).val();
-      toppings.push(toppings)
+      toppings.push(toppingChoice)
     })
-
-
     var pizza = new Pizza(sizePrice, toppings);
+    console.log(toppings);
+    $(".sizeCat").text(size);
+    $(".toppingCat").text(toppings);
 
-
-
-    console.log(pizza);
-    console.log("Your total comes to: $" + pizza.price());
+    $(".totalPrice").text("Your total comes to: $" + pizza.price());
     event.preventDefault();
   })
 });
