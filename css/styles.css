@@ -1,5 +1,11 @@
 #orderSummary {
   display: none;
+  font-size: 25px;
+  background-color: #f07c6f;
+  margin-left: 70px;
+  padding: 10px;
+  margin-top: 15%;
+  width: 60%;
 }
 
 #pizzaCreator {
