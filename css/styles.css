@@ -1,0 +1,24 @@
+#orderSummary {
+  display: none;
+}
+
+#pizzaCreator {
+  padding: 30px;
+
+}
+.sizeBox {
+  margin-top: 30px;
+  margin-botton: 30px;
+}
+.toppingsBox {
+  margin-top: 30px;
+}
+
+body {
+  background-color: #f0e46f;
+}
+
+.jumbotron {
+  background-color: #f07c6f;
+  border-radius: 10px;
+}

@@ -8,13 +8,10 @@ return this.size + this.toppings.length*2.50;
 }
 
 $(document).ready(function() {
-
   var toppings = [];
   var sizePrice = "";
-
   $("#pizzaCreator").submit(function(event) {
   var size = $("input:radio[name=size]:checked").val();
-
   if (size === "Personal") {
     sizePrice = 7;
   }
@@ -32,10 +29,10 @@ $(document).ready(function() {
       toppings.push(toppingChoice)
     })
     var pizza = new Pizza(sizePrice, toppings);
-    console.log(toppings);
+    $("#pizzaCreator").hide();
+    $("#orderSummary").show();
     $(".sizeCat").text(size);
     $(".toppingCat").text(toppings);
-
     $(".totalPrice").text("Your total comes to: $" + pizza.price());
     event.preventDefault();
   })
